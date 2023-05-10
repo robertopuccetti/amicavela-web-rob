@@ -10,9 +10,8 @@ const ProductHeroLayoutRoot = styled("section")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   [theme.breakpoints.up("sm")]: {
-    height: "80vh",
-    minHeight: 500,
-    maxHeight: 1300,
+    // minHeight: 500,
+    // maxHeight: 1000,
   },
 }));
 
@@ -26,6 +25,7 @@ const Video = () => {
       loop
       sx={{
         minHeight: '400px',
+        maxHeight: '760px',
         objectFit: 'cover'
       }}
     />
@@ -36,9 +36,6 @@ export default function ProductHeroLayout(
   props: React.HTMLAttributes<HTMLDivElement>
 ) {
   const { children } = props;
-
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('sm'));
 
   return (
     <ProductHeroLayoutRoot>

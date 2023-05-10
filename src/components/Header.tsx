@@ -108,7 +108,7 @@ const Header = () => {
           >
             {links.map((link) => (
               <Link href={link.url} target="_blank" underline="none" key={link.id}>
-                <Typography className={styles.link}>{link.route}</Typography>
+                <Typography className={styles.link} color={(theme.palette.primary.main)}>{link.route}</Typography>
               </Link>
             ))}
           </Box>}

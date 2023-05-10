@@ -11,12 +11,12 @@ export const roboto = Roboto({
 
 
 const rawTheme = createTheme({
-  // palette: {
-  //   primary: {
-  //     light: "#69696a",
-  //     main: "#28282a",
-  //     dark: "#1e1e1f",
-  //   },
+  palette: {
+    primary: {
+      light: "#46ceff",
+      main: "#00366b",
+      dark: "#1e1e1f",
+    }
   //   secondary: {
   //     light: "#fff5f8",
   //     main: "#ff3366",
@@ -36,7 +36,7 @@ const rawTheme = createTheme({
   //     main: green[500],
   //     dark: green[700],
   //   },
-  // },
+  },
   typography: {
     fontFamily: "'Work Sans', sans-serif",
     fontSize: 14,
