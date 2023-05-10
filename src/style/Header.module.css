@@ -1,0 +1,25 @@
+.toolbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.name {
+  color: darkblue;
+  cursor: pointer;
+}
+
+.link {
+  margin: 0 1rem;
+  color: darkblue;
+}
+
+.menuIcon {
+  color: #000;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
