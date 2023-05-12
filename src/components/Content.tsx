@@ -11,13 +11,13 @@ export default function Content() {
 
   const cardContentProps: CardContentProps[] = [
     {
-      title: "Corsi di vela", image: corsiSrc, link: "/corsi-di-vela",
+      title: "👨🏻‍🏫 Corsi di vela", image: corsiSrc, link: "/corsi-di-vela",
       text:
         `Il corso di vela è tenuto interamente a bordo di uno yacht 
         cabinato di 13,5 metri, organizzato con l'unico obiettivo di promuovere la vela.`
     },
     {
-      title: "Regate", image: regateSrc, link: "/regate",
+      title: "⛵️ Regate", image: regateSrc, link: "/regate",
       text: `La nostra esperienza nasce dai monotipi Solaris36 e Platu25
         con cui abbiamo partecipato al Circuito Italiano ed ai Campionati Mondiali, 
         oltre che dalle Vele Storiche a cui abbiamo partecipato con il nostro Sangermani 40.
@@ -25,7 +25,7 @@ export default function Content() {
         e alto Tirreno con un Dufour 44 Performace.
     ` },
     {
-      title: "Navigazione assistita", image: assistitaSrc, link: "/navigazione-assistita",
+      title: "⚓️ Navigazione assistita", image: assistitaSrc, link: "/navigazione-assistita",
       text: `Ai principianti che vogliono godersi il piacere di 
         veleggiare davanti alle nostre coste oppure  fra le isole dell ${'’'}arcipelago, magari non disdegnando
         qualche bagno rinfrescante, offriamo l ${'’'}esperienza della navigazione assistita dai nostri esperti

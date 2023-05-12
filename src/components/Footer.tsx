@@ -8,7 +8,7 @@ const Footer = () => {
     "Associazione Sportiva Dilettantistica",
     "Via Monte San Daniele, 24/H, 57023 Cecina(LI)",
     "C.F. 92099380492 - N° Coni 79264",
-    "335 5267249 - info@amicavela.it" 
+    "📞 335 5267249 - 📫 info@amicavela.it" 
   ];
 
   return (
