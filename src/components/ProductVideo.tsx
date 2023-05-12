@@ -1,36 +1,58 @@
 import * as React from "react";
-import Button from "./Button";
-import ProductHeroLayout from "./ProductVideoLayout";
-import MuiTypography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
+import TextContainer from "@mui/material/Container";
+import { CardMedia, useMediaQuery, useTheme } from "@mui/material";
 
+const ProductVideoLayoutRoot = styled("section")(({ theme }) => ({
+  color: theme.palette.common.white,
+  position: "relative",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  [theme.breakpoints.up("sm")]: {
+    // minHeight: 500,
+    // maxHeight: 1000,
+  },
+}));
 
-export default function ProductHero() {
+const Video = () => {
+  return (
+    <CardMedia
+      component='video'
+      image={"amica-vela-cut.mp4"}
+      autoPlay
+      muted
+      loop
+      sx={{
+        minHeight: '400px',
+        maxHeight: 'calc(100vh - 64px)',
+        objectFit: 'cover'
+      }}
+    />
+  )
+}
+
+export default function ProductHeroLayout(
+  props: React.HTMLAttributes<HTMLDivElement>
+) {
+  const { children } = props;
 
   return (
-    <ProductHeroLayout>
-      <MuiTypography 
-        color="inherit" 
-        variant="h3" 
-        align="center"
-        sx={{ marginBottom: "0.5rem"}}>
-        AmicaVela
-      </MuiTypography>
-      <MuiTypography 
-        color="inherit" 
-        variant="h6" 
-        align="center"
-        sx={{ marginBottom: "10vh"}}>
-        associazione sportiva dilettantistica
-      </MuiTypography>
-      <Button
-        color="inherit"
-        variant="outlined"
-        size="large"
-        href="/about"
-        sx={{ minWidth: 200 }}
+    <ProductVideoLayoutRoot>
+      <Video />
+      <TextContainer
+        sx={{
+          position: "absolute",
+          top: "20%",
+          width: "100%",
+          textAlign: "center",
+          color: "white",
+          backgroundColor: "none",
+          textShadow: "0px 0px 10px black",
+        }}
       >
-        Tesseramento 2023/24
-      </Button>
-    </ProductHeroLayout>
+        {children}
+      </TextContainer>
+    </ProductVideoLayoutRoot>
   );
 }
