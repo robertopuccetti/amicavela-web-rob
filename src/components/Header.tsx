@@ -1,7 +1,6 @@
 import {
   AppBar,
   Typography,
-  Link,
   Box,
   Toolbar,
   List,
@@ -16,6 +15,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import styles from '../style/Header.module.css';
 import Image from 'next/image';
 import logoSrc from 'public/images/logo.png';
+import Link from '../Link';
 
 const Header = () => {
 
@@ -72,6 +72,7 @@ const Header = () => {
             src={logoSrc}
             alt="Amica Vela"
           />
+
 
           {matches ? (
             <Box>

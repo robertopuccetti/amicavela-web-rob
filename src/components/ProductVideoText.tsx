@@ -2,35 +2,38 @@ import * as React from "react";
 import Button from "./Button";
 import ProductHeroLayout from "./ProductVideo";
 import MuiTypography from "@mui/material/Typography";
+import Link  from "../Link";
 
 
 export default function ProductHero() {
 
   return (
     <ProductHeroLayout>
-      <MuiTypography 
-        color="inherit" 
-        variant="h3" 
+      <MuiTypography
+        color="inherit"
+        variant="h3"
         align="center"
-        sx={{ marginBottom: "0.5rem"}}>
+        sx={{ marginBottom: "0.5rem" }}>
         AmicaVela
       </MuiTypography>
-      <MuiTypography 
-        color="inherit" 
-        variant="h6" 
+      <MuiTypography
+        color="inherit"
+        variant="h6"
         align="center"
-        sx={{ marginBottom: "10vh"}}>
+        sx={{ marginBottom: "10vh" }}>
         associazione sportiva dilettantistica
       </MuiTypography>
-      <Button
-        color="inherit"
-        variant="outlined"
-        size="large"
-        href="/about"
-        sx={{ minWidth: 200 }}
-      >
-        Tesseramento 2023/24
-      </Button>
+      <Link href="/tesseramento" underline="none" color="inherit">
+        <Button
+          // href="/tesseramento"
+          color="inherit"
+          variant="outlined"
+          size="large"
+          sx={{ minWidth: 200 }}
+        >
+          Tesseramento 2023/24
+        </Button>
+      </Link>
     </ProductHeroLayout>
   );
 }
