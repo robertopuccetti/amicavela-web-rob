@@ -1,6 +1,6 @@
 import * as React from "react";
-import Button from "../components/Button";
-import ProductHeroLayout from "./ProductHeroLayout";
+import Button from "./Button";
+import ProductHeroLayout from "./ProductVideoLayout";
 import MuiTypography from "@mui/material/Typography";
 
 
@@ -26,7 +26,7 @@ export default function ProductHero() {
         color="inherit"
         variant="outlined"
         size="large"
-        href="/"
+        href="/about"
         sx={{ minWidth: 200 }}
       >
         Tesseramento 2023/24

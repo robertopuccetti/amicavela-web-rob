@@ -1,5 +1,6 @@
 import { useTheme } from '@mui/material/styles';
-import { Box, Card, CardHeader, CardMedia, Container, Grid, Typography } from "@mui/material";
+import { Box, Card, CardMedia, Container, Typography } from "@mui/material";
+import Grid from '@mui/material/Unstable_Grid2';
 import Image, { StaticImageData } from "next/image";
 import corsiSrc from 'public/images/corsi.jpg'
 import regateSrc from 'public/images/regate.jpg'
@@ -43,10 +44,10 @@ export default function Content() {
         I nostri servizi ai soci
       </Typography>
 
-      <Grid container spacing={3}>
+      <Grid container columnSpacing={4}>
 
         {cardContentProps.map((props, index) => (
-          <GridItem props={props} index={index} />
+          <GridItem props={props} index={index} key={index} />
         ))}
 
       </Grid>
@@ -66,27 +67,25 @@ function GridItem({ props, index }: { props: CardContentProps, index: number }) 
   const theme = useTheme();
 
   return (
-    <Grid item xs={12} md={6} lg={4} key={index}>
-        <Card sx={{ padding: "1rem", alignContent: "center", justifyContent: "center" }}>
-          <CardMedia title={props.title}>
-            <CardHeader
-              title={
-                <Typography variant="h5" component="h4" color={(theme.palette.primary.light)} >
-                  {props.title}
-                </Typography>
-              }
-            />
-            <Image
-              alt="corsi di vela"
-              src={props.image}
-              style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
-            >
-            </Image>
-            <Typography variant="body1" align='center' gutterBottom padding={1}>
-              {props.text}
-            </Typography>
-          </CardMedia>
-        </Card>
+    <Grid xs={12} md={4} key={index}
+      sx={{ padding: "1rem" }}
+    >
+      <Card sx={{ padding: "1rem", alignContent: "center", justifyContent: "center", height: "100%"}}>
+      <CardMedia title={props.title}>
+        <Typography variant="h5" component="h4" color={(theme.palette.primary.light)} gutterBottom>
+          {props.title}
+        </Typography>
+        <Image
+          alt="corsi di vela"
+          src={props.image}
+          style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+        >
+        </Image>
+        <Typography variant="body1" align='center' gutterBottom padding={1}>
+          {props.text}
+        </Typography>
+      </CardMedia>
+      </Card>
     </Grid>
   )
 }

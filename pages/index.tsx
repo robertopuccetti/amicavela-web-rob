@@ -1,5 +1,5 @@
 import Header from '../src/components/Header';
-import ProductHero from '../src/components/ProductHero';
+import ProductHero from '../src/components/ProductVideo';
 import Content from '../src/components/Content';
 
 export default function Home() {

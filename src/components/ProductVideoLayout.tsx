@@ -1,6 +1,6 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import Container from "@mui/material/Container";
+import TextContainer from "@mui/material/Container";
 import { CardMedia, useMediaQuery, useTheme } from "@mui/material";
 
 const ProductHeroLayoutRoot = styled("section")(({ theme }) => ({
@@ -25,7 +25,7 @@ const Video = () => {
       loop
       sx={{
         minHeight: '400px',
-        maxHeight: '760px',
+        maxHeight: 'calc(100vh - 64px)',
         objectFit: 'cover'
       }}
     />
@@ -40,7 +40,7 @@ export default function ProductHeroLayout(
   return (
     <ProductHeroLayoutRoot>
       <Video />
-      <Container
+      <TextContainer
         sx={{
           position: "absolute",
           top: "20%",
@@ -52,7 +52,7 @@ export default function ProductHeroLayout(
         }}
       >
         {children}
-      </Container>
+      </TextContainer>
     </ProductHeroLayoutRoot>
   );
 }

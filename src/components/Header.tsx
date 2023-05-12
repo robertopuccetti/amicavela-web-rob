@@ -19,6 +19,7 @@ import Image from 'next/image';
 import logoSrc from 'public/images/logo.png';
 
 const Header = () => {
+  
   const links = [
     { id: 1, route: 'Corsi di vela', url: '/' },
     { id: 2, route: 'Regate', url: '/' },
@@ -62,7 +63,7 @@ const Header = () => {
   const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Box sx={{ marginBottom: '70px' }}>
+    <Box sx={{ marginBottom: '10vh' }}>
       <AppBar>
         <Toolbar className={styles.toolbar}>
           
