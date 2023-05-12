@@ -66,13 +66,13 @@ const Header = () => {
     <Box sx={{ marginBottom: '10vh' }}>
       <AppBar>
         <Toolbar className={styles.toolbar}>
-
-          <Image
-            className={styles.logo}
-            src={logoSrc}
-            alt="Amica Vela"
-          />
-
+          <Link href={"/"} sx={{ height: "inherit"}}>
+            <Image
+              className={styles.logo}
+              src={logoSrc}
+              alt="Amica Vela"
+            />
+          </Link>
 
           {matches ? (
             <Box>
