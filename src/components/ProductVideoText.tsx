@@ -23,9 +23,8 @@ export default function ProductHero() {
         sx={{ marginBottom: "10vh" }}>
         associazione sportiva dilettantistica
       </MuiTypography>
-      <Link href="/tesseramento" underline="none" color="inherit">
+      <Link href="/pdf/tesseramento.pdf" target="_blank" underline="none" color="inherit">
         <Button
-          // href="/tesseramento"
           color="inherit"
           variant="outlined"
           size="large"
