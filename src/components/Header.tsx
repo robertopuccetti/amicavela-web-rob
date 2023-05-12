@@ -6,7 +6,6 @@ import {
   Toolbar,
   List,
   ListItem,
-  ListItemText,
   IconButton,
   Drawer,
 } from '@mui/material';
@@ -19,14 +18,14 @@ import Image from 'next/image';
 import logoSrc from 'public/images/logo.png';
 
 const Header = () => {
-  
+
   const links = [
-    { id: 1, route: 'Corsi di vela', url: '/' },
-    { id: 2, route: 'Regate', url: '/' },
-    { id: 3, route: 'Navigazione assistita', url: '/' },
-    { id: 4, route: 'Foto', url: '/' },
-    { id: 5, route: 'Blog', url: '/' },
-    { id: 6, route: 'Bacheca', url: '/' },
+    { id: 1, route: 'Corsi di vela', url: '/corsi-di-vela' },
+    { id: 2, route: 'Regate', url: '/regate' },
+    { id: 3, route: 'Navigazione assistita', url: '/navigazione-assistita' },
+    { id: 4, route: 'Foto', url: 'https://photos.app.goo.gl/OZuaH2dSTmejeHBk1' },
+    { id: 5, route: 'Blog', url: '/blog' },
+    { id: 6, route: 'Bacheca', url: '/bacheca' },
   ];
 
   const [state, setState] = React.useState(false);
@@ -46,13 +45,14 @@ const Header = () => {
     <Box
       sx={{ width: 250 }}
       role="presentation"
-      onClick={(_e) => setState(false)}
       onKeyDown={toggleDrawer(false)}
     >
       <List>
         {links.map((link) => (
           <ListItem button key={link.id}>
-            <ListItemText primary={link.route} />
+            <Link href={link.url} underline="none">
+              <Typography className={styles.link} color={(theme.palette.primary.main)}>{link.route}</Typography>
+            </Link>
           </ListItem>
         ))}
       </List>
@@ -60,25 +60,18 @@ const Header = () => {
   );
 
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('sm'));
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Box sx={{ marginBottom: '10vh' }}>
       <AppBar>
         <Toolbar className={styles.toolbar}>
-          
-          {/* insert logo from local image */}
+
           <Image
             className={styles.logo}
             src={logoSrc}
             alt="Amica Vela"
           />
-
-          {/* <Link href="/" underline="none">
-            <Typography variant="h5" className={styles.name}>
-              Amica Vela a.s.d.
-            </Typography>
-          </Link> */}
 
           {matches ? (
             <Box>
@@ -108,7 +101,7 @@ const Header = () => {
             }}
           >
             {links.map((link) => (
-              <Link href={link.url} target="_blank" underline="none" key={link.id}>
+              <Link href={link.url} underline="none" key={link.id}>
                 <Typography className={styles.link} color={(theme.palette.primary.main)}>{link.route}</Typography>
               </Link>
             ))}
