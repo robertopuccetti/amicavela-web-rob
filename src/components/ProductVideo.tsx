@@ -1,7 +1,7 @@
-import * as React from "react";
-import { styled } from "@mui/material/styles";
+import { CardMedia } from "@mui/material";
 import TextContainer from "@mui/material/Container";
-import { CardMedia, useMediaQuery, useTheme } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import * as React from "react";
 
 const ProductVideoLayoutRoot = styled("section")(({ theme }) => ({
   color: theme.palette.common.white,
@@ -9,17 +9,17 @@ const ProductVideoLayoutRoot = styled("section")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  [theme.breakpoints.up("sm")]: {
-    // minHeight: 500,
-    // maxHeight: 1000,
-  },
+  // [theme.breakpoints.up("sm")]: {
+  //   minHeight: 500,
+  //   maxHeight: 1000,
+  // },
 }));
 
 const Video = () => {
   return (
     <CardMedia
       component='video'
-      image={"amica-vela-cut.mp4"}
+      image={"https://pub-e5d8e266486a43f8be346cf1d6987202.r2.dev/Video 4 - ridotto copy.mp4"}
       autoPlay
       muted
       loop

@@ -11,7 +11,7 @@ export default function Content() {
 
   const cardContentProps: CardContentProps[] = [
     {
-      title: "👨🏻‍🏫 Corsi di vela", image: corsiSrc, link: "/corsi-di-vela",
+      title: "🛟 Corsi di vela", image: corsiSrc, link: "/corsi-di-vela",
       text:
         `Il corso di vela è tenuto interamente a bordo di uno yacht 
         cabinato di 13,5 metri, organizzato con l'unico obiettivo di promuovere la vela.`

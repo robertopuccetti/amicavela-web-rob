@@ -1,9 +1,7 @@
-import * as React from "react";
 import Button from "./Button";
 import ProductHeroLayout from "./ProductVideo";
 import MuiTypography from "@mui/material/Typography";
 import Link  from "../Link";
-
 
 export default function ProductHero() {
 
