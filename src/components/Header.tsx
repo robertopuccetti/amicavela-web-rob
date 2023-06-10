@@ -20,6 +20,7 @@ import Link from '../Link';
 const Header = () => {
 
   const links = [
+    { id: 0, route: 'Home', url: '/'},
     { id: 1, route: 'Corsi di vela', url: '/corsi' },
     { id: 2, route: 'Regate', url: '/regate' },
     { id: 3, route: 'Navigazione assistita', url: '/navigazione-assistita' },

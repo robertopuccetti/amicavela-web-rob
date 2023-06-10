@@ -115,7 +115,7 @@ function GridItem({
                 {props.title}
               </Typography>
               <Image
-                alt="corsi di vela"
+                alt={props.title}
                 src={props.image}
                 style={{
                   maxWidth: "100%",

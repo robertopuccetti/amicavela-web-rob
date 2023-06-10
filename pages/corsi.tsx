@@ -3,9 +3,9 @@ import Image from "next/image";
 import corsiSrc from "public/images/corsi.jpg";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
-import PriceTable from "../src/components/priceTable";
+import PriceTable from "../src/components/PriceTable";
 
-export default function NotFound() {
+export default function Corsi() {
   const theme = useTheme();
 
   return (
