@@ -26,7 +26,7 @@ const Header = () => {
     { id: 3, route: 'Navigazione assistita', url: '/navigazione-assistita' },
     { id: 4, route: 'Foto', url: 'https://photos.app.goo.gl/OZuaH2dSTmejeHBk1' },
     { id: 5, route: 'Blog', url: '/blog' },
-    { id: 6, route: 'Bacheca', url: '/bacheca' },
+    { id: 6, route: 'Documenti', url: '/bacheca' },
     { id: 7, route: 'Sponsor', url: '/sponsor' },
 
   ];
