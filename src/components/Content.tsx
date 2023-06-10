@@ -67,10 +67,9 @@ export default function Content() {
 
       <Typography
         variant="h4"
-        component="h3"
         color="#00366b"
         textAlign={"center"}
-        marginY={"3rem"}
+        marginTop={"2rem"}
       >
         I nostri servizi ai soci
       </Typography>
