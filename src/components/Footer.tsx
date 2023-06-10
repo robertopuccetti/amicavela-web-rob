@@ -2,8 +2,6 @@ import { Box, Typography, Link, useTheme } from '@mui/material';
 import styles from '../style/Footer.module.css';
 
 const Footer = () => {
-  // const date = new Date().getFullYear();
-
   const footerLines = [
     "Associazione Sportiva Dilettantistica",
     "Via Monte San Daniele, 24/H, 57023 Cecina(LI)",
@@ -12,7 +10,7 @@ const Footer = () => {
   ];
 
   return (
-    <Box sx={{ flexGrow: 1 }} className={styles.footerContainer}>
+    <Box sx={{ flexGrow: 1 }} className={styles.footerContainer} >
       <Typography fontSize={16} fontWeight={600} color={'dimgray'}>
         Amica Vela
       </Typography>

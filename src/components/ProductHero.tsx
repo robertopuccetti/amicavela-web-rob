@@ -1,5 +1,5 @@
 import Button from "./Button";
-import ProductHeroLayout from "./ProductVideo";
+import ProductHeroLayout from "./ProductHeroLayout";
 import MuiTypography from "@mui/material/Typography";
 import Link  from "../Link";
 
