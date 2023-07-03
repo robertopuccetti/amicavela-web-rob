@@ -23,7 +23,7 @@ export default function ProductHero() {
         associazione sportiva dilettantistica
       </MuiTypography>
       <Link
-        href="https://pub-e5d8e266486a43f8be346cf1d6987202.r2.dev/tesseramento.pdf"
+        href="tesseramento.pdf"
         target="_blank"
         underline="none"
         color="inherit"

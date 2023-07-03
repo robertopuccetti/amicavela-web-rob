@@ -19,7 +19,7 @@ const Video = () => {
   return (
     <CardMedia
       component='video'
-      image={"https://pub-e5d8e266486a43f8be346cf1d6987202.r2.dev/Video 4 - ridotto copy.mp4"}
+      image={"video-hero.mp4"}
       autoPlay
       muted
       loop

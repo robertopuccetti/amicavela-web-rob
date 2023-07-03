@@ -71,19 +71,20 @@ export default function Corsi() {
         </List>
 
         <Typography variant="body1">
-          <a href="https://pub-e5d8e266486a43f8be346cf1d6987202.r2.dev/cv.pdf">
-            Questo il nostro palmares sui campi di regata
-          </a>
+          <a href="cv.pdf">Questo il nostro palmares sui campi di regata</a>
         </Typography>
 
+        <Typography
+          color={theme.palette.primary.main}
+          variant="h6"
+          display="inline"
+        >
+          N.B.
+        </Typography>
         <Typography variant="body1">
-          
-          <Typography color={theme.palette.primary.main} variant="h6" display="inline"> N.B. </Typography> Data l’ampia visibilità degli eventi a cui partecipiamo, siamo
+          Data l’ampia visibilità degli eventi a cui partecipiamo, siamo
           disponibili ad offrire spazi pubblicitari sulle nostre barche anche
-          per lunghi periodi (vedi{" "}
-          <a href="https://pub-e5d8e266486a43f8be346cf1d6987202.r2.dev/brochure.pdf">
-            brochure
-          </a>
+          per lunghi periodi (vedi <a href="brochure.pdf">brochure</a>
           ).
         </Typography>
       </PageLayout>
