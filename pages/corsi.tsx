@@ -22,7 +22,7 @@ export default function Corsi() {
           che viene rilasciata direttamente dall{"’"}associazione, dietro
           presentazione di certificato medico che attesti lo stato di buona
           salute e l{"’"}idoneità a svolgere attività sportiva non agonistica.
-          Il tesseramento comprende la copertura assicurativa.
+          Il tesseramento comprende la copertura assicurativa
         </Typography>
 
         <Typography variant="h5" color={theme.palette.primary.light}>
